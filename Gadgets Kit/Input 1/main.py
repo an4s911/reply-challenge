@@ -5,6 +5,7 @@ def find_hcf(args=list()) -> int:
 	  
 	    return x 
 	  
+	  
 	num1=args[0] 
 	num2=args[1] 
 	gcd=find_gcd(num1,num2) 
