@@ -30,13 +30,15 @@ for test_case in range(1, T+1):
 	# ----- FOR MAXIMUM ------
 	maximum_score = 0
 
-	copy_a = a_scores
-	copy_b = b_scores
+	copy_a = list(a_scores)
+	copy_b = list(b_scores)
 
 	for antenna in range(k):
 
 		high_a = max(copy_a)
+		print(test_case, high_a)
 		high_b = max(copy_b)
+		print(high_b)
 
 		copy_a.remove(high_a)
 		copy_b.remove(high_b)
@@ -46,8 +48,8 @@ for test_case in range(1, T+1):
 	# ----- FOR MINIMUM -----
 	minimum_score = 0
 
-	copy_a = a_scores
-	copy_b = b_scores
+	copy_a = list(a_scores)
+	copy_b = list(b_scores)
 
 	for antenna in range(k):
 
